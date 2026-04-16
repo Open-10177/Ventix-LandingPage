@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
 }
 
-/* ── NAV CONFIGURADO ── */
+
 nav {
   position: fixed;
   top: 0;
@@ -100,7 +100,7 @@ nav {
   .nav-container { padding: 0 25px; }
 }
 
-/* ── HERO / HOME SECTION ── */
+
 #home {
   position: relative;
   min-height: 100vh;
@@ -225,7 +225,7 @@ nav {
   }
 }
 
-/* ── SERVICES SECTION ── */
+
 #services { 
   padding: 100px 60px; 
   background: var(--light); 
@@ -275,7 +275,7 @@ nav {
 .service-card-body h3 { font-size: 1.8rem; font-weight: 700; margin-bottom: 20px; }
 .service-card-body p { font-size: 1rem; line-height: 1.8; opacity: .95; }
 
-/* Mission/Vision Strip */
+
 .mission-strip {
   margin-top: 60px;
   background: #dce9f5; border-radius: 20px;
@@ -300,7 +300,7 @@ nav {
   .mission-divider { display: none; }
 }
 
-/* ── TESTIMONIALS SECTION ── */
+
 #testimonials {
   background: #114b6e; 
   padding: 100px 80px;
@@ -415,7 +415,7 @@ nav {
   .testi-main-img { order: -1; }
 }
 
-/* ── BENEFITS ── */
+
 #benefits { padding: 100px 60px; background: var(--white); text-align: center; }
 
 .benefits-grid { 
@@ -449,7 +449,7 @@ nav {
 .benefit-card-body h3 { font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 15px; }
 .benefit-card-body p { font-size: 1rem; color: var(--navy); line-height: 1.6; opacity: .8; }
 
-/* ── PRICING PLANS ── */
+
 #pricing { padding: 100px 60px; background: var(--light); }
 
 .plans-grid { 
@@ -500,7 +500,6 @@ nav {
 .plan-card-features li { padding: 12px 0; font-size: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 15px; }
 .plan-card-features li::before { content: '✓'; font-weight: 900; }
 
-/* ── TEAM SECTION ── */
 #team { padding: 100px 60px; background: var(--navy-deep); }
 #team .section-header h2 { color: var(--teal); font-size: 2.5rem; margin-bottom: 10px; }
 #team .section-header p { color: rgba(255,255,255,0.6); margin-bottom: 50px; }
@@ -525,7 +524,6 @@ nav {
 .team-card h3 { font-size: 1.1rem; color: var(--navy); margin-bottom: 5px; font-weight: 800; }
 .team-card span { font-size: 0.85rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
 
-/* ── CONTACT SECTION ── */
 #contact { 
   padding: 100px 60px; 
   background: var(--light); 
@@ -564,7 +562,7 @@ nav {
   .team-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ── FOOTER ── */
+
 footer {
   background: var(--mint);
   padding: 40px 60px 24px;
@@ -615,7 +613,6 @@ footer {
 }
 .social-links a:hover { transform: translateY(-3px); background: var(--navy); }
 
-/* ── ANIMATIONS ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
