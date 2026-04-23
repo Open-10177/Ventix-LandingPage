@@ -527,12 +527,25 @@ nav {
 .plan-card-header { padding: 40px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.2); }
 .plan-card-header h3 { font-size: 1.8rem; font-weight: 800; margin-bottom: 20px; }
 
-.plan-img-placeholder {
-  width: 120px; height: 80px; 
-  background: rgba(255,255,255,0.2);
-  border-radius: 15px; 
-  margin: 0 auto 25px;
+.plan-img {
+  width: 120px;
+  height: 90px;
+  margin: 15px auto 25px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.plan-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 .btn-plan {
   padding: 12px 35px;
