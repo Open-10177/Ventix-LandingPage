@@ -84,3 +84,26 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', moveSlider);
   }
 });
+
+const track = document.getElementById("testiTrack");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let scrollAmount = 0;
+const cardWidth = 430; // 400px card + 30px gap (según tu CSS)
+
+const maxScroll = cardWidth; // SOLO 1 movimiento
+
+nextBtn.addEventListener("click", () => {
+  if (scrollAmount < maxScroll) {
+    scrollAmount += cardWidth;
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (scrollAmount > 0) {
+    scrollAmount -= cardWidth;
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+  }
+});
