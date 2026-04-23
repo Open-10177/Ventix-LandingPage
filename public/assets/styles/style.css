@@ -323,6 +323,7 @@ nav {
 .mission-divider { width: 1px; height: 60px; background: rgba(0,0,0,0.12); }
 
 
+
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .service-card {
@@ -441,10 +442,25 @@ nav {
   margin-bottom: 15px;
 }
 
-.q-left, .q-right { font-size: 3rem; font-family: serif; color: #000; line-height: 1; }
+.q-left, .q-right, .quote-marks { font-size: 3rem; font-family: serif; color: #000; line-height: 1; }
 
 .testi-card p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 25px; color: #444; }
 .testi-card .author { font-weight: 800; font-size: 0.9rem; text-transform: none; color: #000; }
+
+.testi-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 3px solid var(--teal);
+}
+
+.testi-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 992px) {
   .testi-cta-container, .testi-content-row { grid-template-columns: 1fr; padding: 20px; }
