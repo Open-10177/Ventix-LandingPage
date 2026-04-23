@@ -53,6 +53,62 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.12 });
   reveals.forEach(el => observer.observe(el));
 
+
+  // --- SLIDER DE SERVICIOS ---
+
+  const servicesTrack = document.getElementById('servicesTrack');
+  const serviceCards = document.querySelectorAll('.service-card');
+
+  let servicesIndex = 0;
+  let isMoving = false;
+
+  function moveServices() {
+    const cardWidth = serviceCards[0].offsetWidth;
+    const gap = 30;
+
+    servicesTrack.style.transform =
+        `translateX(-${servicesIndex * (cardWidth + gap)}px)`;
+  }
+
+// 🔥 MÁS LENTO (antes 250ms → ahora 600ms)
+  function throttleMove(callback, delay = 600) {
+    if (isMoving) return;
+
+    isMoving = true;
+    callback();
+
+    setTimeout(() => {
+      isMoving = false;
+    }, delay);
+  }
+
+  const wrapper = document.querySelector('#services .testi-slider-wrapper');
+
+  if (wrapper) {
+    wrapper.addEventListener('mousemove', (e) => {
+      const rect = wrapper.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const width = rect.width;
+
+      if (x > width * 0.7 && servicesIndex < serviceCards.length - 1) {
+        throttleMove(() => {
+          servicesIndex++;
+          moveServices();
+        });
+      }
+
+      if (x < width * 0.3 && servicesIndex > 0) {
+        throttleMove(() => {
+          servicesIndex--;
+          moveServices();
+        });
+      }
+    });
+  }
+
+  window.addEventListener('resize', moveServices);
+
+
   // --- 4. SLIDER DE TESTIMONIOS ---
   const track = document.getElementById('testiTrack');
   const prevBtn = document.getElementById('prevBtn');
@@ -60,50 +116,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const cards = document.querySelectorAll('.testi-card');
 
   if (track && cards.length > 0) {
+
     let currentIndex = 0;
+
     function moveSlider() {
-      const cardWidth = cards.offsetWidth;
-      const gap = 30; 
-      const moveAmount = cardWidth + gap;
-      track.style.transform = `translateX(-${currentIndex * moveAmount}px)`;
+      const cardWidth = cards[0].offsetWidth + 30;
+      track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
 
-    nextBtn.addEventListener('click', () => {
-      if (currentIndex < cards.length - 2) { 
+    nextBtn?.addEventListener('click', () => {
+      if (currentIndex < cards.length - 2) {
         currentIndex++;
         moveSlider();
       }
     });
 
-    prevBtn.addEventListener('click', () => {
+    prevBtn?.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
         moveSlider();
       }
     });
+
     window.addEventListener('resize', moveSlider);
   }
+
 });
 
-const track = document.getElementById("testiTrack");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
 
-let scrollAmount = 0;
-const cardWidth = 430; // 400px card + 30px gap (según tu CSS)
 
-const maxScroll = cardWidth; // SOLO 1 movimiento
-
-nextBtn.addEventListener("click", () => {
-  if (scrollAmount < maxScroll) {
-    scrollAmount += cardWidth;
-    track.style.transform = `translateX(-${scrollAmount}px)`;
-  }
-});
-
-prevBtn.addEventListener("click", () => {
-  if (scrollAmount > 0) {
-    scrollAmount -= cardWidth;
-    track.style.transform = `translateX(-${scrollAmount}px)`;
-  }
-});

@@ -4,342 +4,342 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ventix – Smart Ventilation</title>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
-  
+
   <link rel="stylesheet" href="public/assets/styles/style.css"/>
 </head>
 <body>
 
 <nav>
-    <div class="nav-container">
-      <div class="nav-logo">Ventix</div>
-      
-      <ul class="nav-links">
-        <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
-        <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
-        <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonios</a></li>
-        <li><a href="#benefits" data-i18n="nav_benefits">Beneficios</a></li>
-        <li><a href="#pricing" data-i18n="nav_pricing">Planes</a></li>
-        <li><a href="#team" data-i18n="nav_team">Equipo</a></li>
-        <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
-      </ul>
+  <div class="nav-container">
+    <div class="nav-logo">Ventix</div>
 
-      <div class="nav-actions">
-        <button class="btn-lang" aria-label="Switch Language">
-          <span class="icon-world">&#127760;</span>
-        </button>
-        <button class="nav-toggle" aria-label="Toggle Menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
+    <ul class="nav-links">
+      <li><a href="#home" data-i18n="nav_home">Inicio</a></li>
+      <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+      <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonios</a></li>
+      <li><a href="#benefits" data-i18n="nav_benefits">Beneficios</a></li>
+      <li><a href="#pricing" data-i18n="nav_pricing">Planes</a></li>
+      <li><a href="#team" data-i18n="nav_team">Equipo</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="btn-lang" aria-label="Switch Language">
+        <span class="icon-world">&#127760;</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Ventix</h1>
+        <p data-i18n="hero_subtitle">Ventilación transparente para espacios productivos.</p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary" data-i18n="hero_btn">Más Información</a>
+        </div>
+      </div>
+      <div class="hero-device">
+        <img src="./public/assets/images/node.png" alt="Ventix Smart Device" />
       </div>
     </div>
-  </nav>
+  </section>
 
-  <main>
-    
-    <section id="home">
-      <div class="hero-bg"></div>
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>Ventix</h1>
-          <p data-i18n="hero_subtitle">Ventilación transparente para espacios productivos.</p>
-          <div class="hero-btns">
-            <a href="#services" class="btn-primary" data-i18n="hero_btn">Más Información</a>
-          </div>
-        </div>
-        <div class="hero-device">
-          <img src="./public/assets/images/node.png" alt="Ventix Smart Device" />
-        </div>
-      </div>
-    </section>
+  <section id="services">
+    <div class="section-header reveal">
+      <h2 data-i18n="serv_title">Todo lo que necesitas en un solo lugar</h2>
+      <p data-i18n="serv_sub">Combinamos diseño inteligente y funciones avanzadas para ofrecerte una experiencia única</p>
+    </div>
 
-    <section id="services">
-      <div class="section-header reveal">
-        <h2 data-i18n="serv_title">Todo lo que necesitas en un solo lugar</h2>
-        <p data-i18n="serv_sub">Combinamos diseño inteligente y funciones avanzadas para ofrecerte una experiencia única</p>
-      </div>
-      
-      <div class="testi-slider-wrapper reveal" style="margin-bottom: 60px;">
-        <div class="services-track" id="servicesTrack">
-          <div class="service-card">
-            <img class="service-card-img" src="./public/assets/images/image3.png" alt="Auto Mode"/>
-            <div class="service-card-body">
-              <h3 data-i18n="serv_card1_title">Modo automático</h3>
-              <p data-i18n="serv_card1_desc">Una función inteligente que ajusta la potencia de ventilación por sí sola, utilizando sensores en tiempo real para mantener el aire limpio y la temperatura ideal.</p>
-            </div>
-          </div>
-          <div class="service-card">
-            <img class="service-card-img" src="./public/assets/images/image2.png" alt="Remote Control"/>
-            <div class="service-card-body">
-              <h3 data-i18n="serv_card2_title">Control remoto</h3>
-              <p data-i18n="serv_card2_desc">Gestiona tu sistema de ventilación desde cualquier parte del mundo con nuestra app intuitiva. Ajusta temperatura, flujo de aire y horarios.</p>
-            </div>
-          </div>
-          <div class="service-card">
-            <img class="service-card-img" src="./public/assets/images/image4.png" alt="Air Filtering"/>
-            <div class="service-card-body">
-              <h3 data-i18n="serv_card3_title">Filtrado avanzado</h3>
-              <p data-i18n="serv_card3_desc">Nuestros filtros de última generación eliminan hasta el 99.9% de partículas dañinas, alérgenos, bacterias y virus del aire.</p>
-            </div>
+    <div class="testi-slider-wrapper reveal" style="margin-bottom: 60px;">
+      <div class="services-track" id="servicesTrack">
+        <div class="service-card">
+          <img class="service-card-img" src="./public/assets/images/image3.png" alt="Auto Mode"/>
+          <div class="service-card-body">
+            <h3 data-i18n="serv_card1_title">Modo automático</h3>
+            <p data-i18n="serv_card1_desc">Una función inteligente que ajusta la potencia de ventilación por sí sola, utilizando sensores en tiempo real para mantener el aire limpio y la temperatura ideal.</p>
           </div>
         </div>
-      </div>
-
-      <div class="mission-strip reveal">
-        <div class="mission-item">
-          <div class="mission-icon">☆</div>
-          <div>
-            <h4 data-i18n="mission_title">Misión</h4>
-            <p data-i18n="mission_desc">Entornos inteligentes, mejores vidas.</p>
+        <div class="service-card">
+          <img class="service-card-img" src="./public/assets/images/image2.png" alt="Remote Control"/>
+          <div class="service-card-body">
+            <h3 data-i18n="serv_card2_title">Control remoto</h3>
+            <p data-i18n="serv_card2_desc">Gestiona tu sistema de ventilación desde cualquier parte del mundo con nuestra app intuitiva. Ajusta temperatura, flujo de aire y horarios.</p>
           </div>
         </div>
-        <div class="mission-divider"></div>
-        <div class="mission-item">
-          <div class="mission-icon">💡</div>
-          <div>
-            <h4 data-i18n="vision_title">Visión</h4>
-            <p data-i18n="vision_desc">Referente global en bienestar inteligente.</p>
+        <div class="service-card">
+          <img class="service-card-img" src="./public/assets/images/image4.png" alt="Air Filtering"/>
+          <div class="service-card-body">
+            <h3 data-i18n="serv_card3_title">Filtrado avanzado</h3>
+            <p data-i18n="serv_card3_desc">Nuestros filtros de última generación eliminan hasta el 99.9% de partículas dañinas, alérgenos, bacterias y virus del aire.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="testimonials">
-      <div class="testi-cta-container reveal">
-        <div class="testi-cta-text">
-          <h2 data-i18n="testi_cta_title">Desbloquea todo tu potencial</h2>
-          <p class="sub" data-i18n="testi_cta_sub">Obtén acceso total a funciones exclusivas y elimina cualquier barrera. La solución completa para quienes no se conforman con lo básico.</p>
-          <a href="#pricing" class="btn-cta" data-i18n="testi_btn">Elegir plan</a>
-        </div>
-        <div class="testi-main-img">
-          <img src="./public/assets/images/image4.png" alt="Ventix User"/>
-        </div>
-      </div>
-
-      <div class="testi-content-row reveal">
-        <div class="testi-header">
-          <h3 data-i18n="testi_header_title">“Menos estrés, más resultados”</h3>
-          <p data-i18n="testi_header_sub">La opinión de nuestros usuarios</p>
-          <div class="testi-nav">
-            <button class="testi-btn" id="prevBtn">&larr;</button>
-            <button class="testi-btn" id="nextBtn">&rarr;</button>
-          </div>
-        </div>
-        <div class="testi-slider-wrapper">
-          <div class="testi-cards-container" id="testiTrack">
-            <div class="testi-card">
-              <div class="quote-marks"><span class="q-left">“</span><span class="q-right">”</span></div>
-              <p>Desde que instalamos Ventix en casa me olvido por completo de abrir ventanas o regular el aire. El modo automático es increíble.</p>
-              <span class="author">Amira Sandoval</span>
-            </div>
-            <div class="testi-card">
-              <div class="quote-marks"><span class="q-left">“</span><span class="q-right">”</span></div>
-              <p>Por fin un sistema de ventilación que realmente funciona. La app es muy intuitiva, controlo todo desde el celular.</p>
-              <span class="author">Laura Méndez</span>
-            </div>
-            <div class="testi-card">
-              <div class="quote-marks"><span class="q-left">“</span><span class="q-right">”</span></div>
-              <p>El ahorro energético es real. Tras 3 meses usando el plan office pro, la factura de electricidad bajó un 20%.</p>
-              <span class="author">Carlos Reyes</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="benefits">
-      <div class="section-header reveal">
-        <h2 data-i18n="ben_title">Beneficios</h2>
-        <p data-i18n="ben_sub">Disfruta de una experiencia fluida, segura y diseñada para tu bienestar</p>
-      </div>
-      <div class="benefits-grid">
-        <div class="benefit-card reveal">
-          <div class="benefit-img-container">
-            <img src="./public/assets/images/image5.png" alt="Health"/>
-          </div>
-          <div class="benefit-card-body">
-            <h3 data-i18n="ben_card1_title">Salud y bienestar</h3>
-            <p data-i18n="ben_card1_desc">El sistema elimina automáticamente alérgenos, CO2 y contaminantes en tiempo real, garantizando aire puro.</p>
-          </div>
-        </div>
-        <div class="benefit-card reveal" style="transition-delay:.15s">
-          <div class="benefit-img-container">
-            <img src="./public/assets/images/image6.png" alt="Control"/>
-          </div>
-          <div class="benefit-card-body">
-            <h3 data-i18n="ben_card2_title">Control Total</h3>
-            <p data-i18n="ben_card2_desc">Gracias a la gestión remota, mantienes el clima ideal de tu hogar desde cualquier parte del mundo.</p>
-          </div>
-        </div>
-        <div class="benefit-card reveal" style="transition-delay:.3s">
-          <div class="benefit-img-container">
-            <img src="./public/assets/images/image7.png" alt="Savings"/>
-          </div>
-          <div class="benefit-card-body">
-            <h3 data-i18n="ben_card3_title">Ahorro Energético</h3>
-            <p data-i18n="ben_card3_desc">Al funcionar únicamente cuando es necesario, el equipo evita el gasto innecesario de electricidad.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="pricing">
-      <div class="section-header reveal">
-        <h2 data-i18n="plan_title">Nuestros Planes</h2>
-        <p data-i18n="plan_sub">Elige la solución perfecta para tu espacio</p>
-      </div>
-      <div class="plans-grid">
-        <div class="plan-card reveal">
-          <div class="plan-card-header">
-            <h3>Home Sync</h3>
-            <div class="plan-img-placeholder"></div>
-            <button class="btn-plan" data-i18n="plan_btn">Elegir Plan</button>
-          </div>
-          <div class="plan-card-features">
-            <ul>
-              <li>Smart Sensors</li>
-              <li>Mobile App Access</li>
-              <li>Real-time Notifications</li>
-            </ul>
-          </div>
-        </div>
-        <div class="plan-card reveal" style="transition-delay:.15s">
-          <div class="plan-card-header">
-            <h3>Office Pro</h3>
-            <div class="plan-img-placeholder"></div>
-            <button class="btn-plan" data-i18n="plan_btn">Elegir Plan</button>
-          </div>
-          <div class="plan-card-features">
-            <ul>
-              <li>Advanced Analytics</li>
-              <li>Multi-device Sync</li>
-              <li>24/7 Priority Support</li>
-              <li>Energy Optimization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="team">
-      <div class="section-header reveal">
-        <h2 data-i18n="team_title">Conoce a nuestro equipo</h2>
-        <p data-i18n="team_sub">Los desarrolladores detrás de la experiencia Ventix</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card reveal">
-<div class="team-photo" style="background-image: url('/public/assets/images/Perfil_Jorge_Taipe.png'); background-size: cover; background-position: center;"></div>          
-          <h3>Jorge Taipe</h3>
-          <span data-i18n="team_role">Ingeniero de Software</span>
-        </div>
-        <div class="team-card reveal" style="transition-delay:.1s">
-          <div class="team-photo" style="background-image: url('/public/assets/images/fotogeral.png'); background-size: cover; background-position: center;"></div>
-          <h3>Geraldine Suarez</h3>
-          <span data-i18n="team_role">Ingeniero de Software</span>
-        </div>
-        <div class="team-card reveal" style="transition-delay:.2s">
-          <div class="team-photo" style="background-image: url('/public/assets/images/fotoruth.jpeg'); background-size: cover; background-position: center;"></div>
-          <h3>Ruth Sanchez</h3>
-          <span data-i18n="team_role">Ingeniero de Software</span>
-        </div>
-        <div class="team-card reveal" style="transition-delay:.3s">
-          <div class="team-photo" style="background-image: url('/public/assets/images/fotoalbin.png'); background-size: cover; background-position: center;"></div>
-          <h3>Albino Caceres</h3>
-          <span data-i18n="team_role">Ingeniero de Software</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact-inner reveal">
-        <div class="contact-img">
-          <img src="./public/assets/images/image8.png" alt="Contact Us"/>
-        </div>
-        <div class="contact-form">
-          <h2 data-i18n="contact_title">Ponte en contacto con nosotros</h2>
-          <p class="sub" data-i18n="contact_sub">Resolvemos tus dudas de inmediato para que tu experiencia sea perfecta</p>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name" data-i18n="contact_label_name">Nombre:</label>
-              <input type="text" id="name" data-i18n="contact_label_name" placeholder="Nombre" required>
-            </div>
-            <div class="form-group">
-              <label for="email" data-i18n="contact_label_email">Correo:</label>
-              <input type="email" id="email" data-i18n="contact_label_email" placeholder="Correo" required>
-            </div>
-            <div class="form-group">
-              <label for="message" data-i18n="contact_label_msg">Mensaje:</label>
-              <textarea id="message" data-i18n="contact_label_msg" placeholder="Mensaje" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit" data-i18n="contact_btn">Contáctanos</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-top">
-      <div class="footer-logo">
-        <div class="footer-logo-icon">🌬️</div>
-        <div class="footer-logo-text">
-          Ventix
-          <small data-i18n="footer_slogan">Ventilación Inteligente</small>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="social-links">
-        <a href="https://www.facebook.com/?locale=es_LA"
-        ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-        /></a>
-        <a href="https://www.instagram.com/"
-        ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-                class="social-icon"
-        /></a>
-        <a href="https://pe.linkedin.com/"
-        ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-        /></a>
-        <a href="https://x.com/?lang=es"
-        ><img
-                src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
-                alt="X"
-                class="social-icon"
-        /></a>
-        <a href="https://wa.me/51999999999">
-          <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-                  alt="WhatsApp"
-                  class="social-icon"
-          />
-        </a>
 
-
-
-
+    <div class="mission-strip reveal">
+      <div class="mission-item">
+        <div class="mission-icon">☆</div>
+        <div>
+          <h4 data-i18n="mission_title">Misión</h4>
+          <p data-i18n="mission_desc">Entornos inteligentes, mejores vidas.</p>
+        </div>
       </div>
-      <div class="footer-copyright">
-        <p class="footer-copy" data-i18n="footer_copy">2026 © Ventix Evolution – Todos los derechos reservados</p>
-        <p class="footer-legal"><a href="#" data-i18n="footer_legal">Política de Privacidad, Términos y Condiciones</a></p>
+      <div class="mission-divider"></div>
+      <div class="mission-item">
+        <div class="mission-icon">💡</div>
+        <div>
+          <h4 data-i18n="vision_title">Visión</h4>
+          <p data-i18n="vision_desc">Referente global en bienestar inteligente.</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="./public/assets/scripts/translations/en.js"></script>
-  <script src="./public/assets/scripts/translations/es.js"></script>
-  <script src="./public/assets/scripts/main.js"></script>
+  <section id="testimonials">
+    <div class="testi-cta-container reveal">
+      <div class="testi-cta-text">
+        <h2 data-i18n="testi_cta_title">Desbloquea todo tu potencial</h2>
+        <p class="sub" data-i18n="testi_cta_sub">Obtén acceso total a funciones exclusivas y elimina cualquier barrera. La solución completa para quienes no se conforman con lo básico.</p>
+        <a href="#pricing" class="btn-cta" data-i18n="testi_btn">Elegir plan</a>
+      </div>
+      <div class="testi-main-img">
+        <img src="./public/assets/images/image4.png" alt="Ventix User"/>
+      </div>
+    </div>
+
+    <div class="testi-content-row reveal">
+      <div class="testi-header">
+        <h3 data-i18n="testi_header_title">“Menos estrés, más resultados”</h3>
+        <p data-i18n="testi_header_sub">La opinión de nuestros usuarios</p>
+        <div class="testi-nav">
+          <button class="testi-btn" id="prevBtn">&larr;</button>
+          <button class="testi-btn" id="nextBtn">&rarr;</button>
+        </div>
+      </div>
+      <div class="testi-slider-wrapper">
+        <div class="testi-cards-container" id="testiTrack">
+          <div class="testi-card">
+            <div class="quote-marks"><span class="q-left">“</span><span class="q-right">”</span></div>
+            <p>Desde que instalamos Ventix en casa me olvido por completo de abrir ventanas o regular el aire. El modo automático es increíble.</p>
+            <span class="author">Amira Sandoval</span>
+          </div>
+          <div class="testi-card">
+            <div class="quote-marks"><span class="q-left">“</span><span class="q-right">”</span></div>
+            <p>Por fin un sistema de ventilación que realmente funciona. La app es muy intuitiva, controlo todo desde el celular.</p>
+            <span class="author">Laura Méndez</span>
+          </div>
+          <div class="testi-card">
+            <div class="quote-marks"><span class="q-left">“</span><span class="q-right">”</span></div>
+            <p>El ahorro energético es real. Tras 3 meses usando el plan office pro, la factura de electricidad bajó un 20%.</p>
+            <span class="author">Carlos Reyes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="section-header reveal">
+      <h2 data-i18n="ben_title">Beneficios</h2>
+      <p data-i18n="ben_sub">Disfruta de una experiencia fluida, segura y diseñada para tu bienestar</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-img-container">
+          <img src="./public/assets/images/image5.png" alt="Health"/>
+        </div>
+        <div class="benefit-card-body">
+          <h3 data-i18n="ben_card1_title">Salud y bienestar</h3>
+          <p data-i18n="ben_card1_desc">El sistema elimina automáticamente alérgenos, CO2 y contaminantes en tiempo real, garantizando aire puro.</p>
+        </div>
+      </div>
+      <div class="benefit-card reveal" style="transition-delay:.15s">
+        <div class="benefit-img-container">
+          <img src="./public/assets/images/image6.png" alt="Control"/>
+        </div>
+        <div class="benefit-card-body">
+          <h3 data-i18n="ben_card2_title">Control Total</h3>
+          <p data-i18n="ben_card2_desc">Gracias a la gestión remota, mantienes el clima ideal de tu hogar desde cualquier parte del mundo.</p>
+        </div>
+      </div>
+      <div class="benefit-card reveal" style="transition-delay:.3s">
+        <div class="benefit-img-container">
+          <img src="./public/assets/images/image7.png" alt="Savings"/>
+        </div>
+        <div class="benefit-card-body">
+          <h3 data-i18n="ben_card3_title">Ahorro Energético</h3>
+          <p data-i18n="ben_card3_desc">Al funcionar únicamente cuando es necesario, el equipo evita el gasto innecesario de electricidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="section-header reveal">
+      <h2 data-i18n="plan_title">Nuestros Planes</h2>
+      <p data-i18n="plan_sub">Elige la solución perfecta para tu espacio</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card reveal">
+        <div class="plan-card-header">
+          <h3>Home Sync</h3>
+          <div class="plan-img-placeholder"></div>
+          <button class="btn-plan" data-i18n="plan_btn">Elegir Plan</button>
+        </div>
+        <div class="plan-card-features">
+          <ul>
+            <li>Smart Sensors</li>
+            <li>Mobile App Access</li>
+            <li>Real-time Notifications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="plan-card reveal" style="transition-delay:.15s">
+        <div class="plan-card-header">
+          <h3>Office Pro</h3>
+          <div class="plan-img-placeholder"></div>
+          <button class="btn-plan" data-i18n="plan_btn">Elegir Plan</button>
+        </div>
+        <div class="plan-card-features">
+          <ul>
+            <li>Advanced Analytics</li>
+            <li>Multi-device Sync</li>
+            <li>24/7 Priority Support</li>
+            <li>Energy Optimization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="section-header reveal">
+      <h2 data-i18n="team_title">Conoce a nuestro equipo</h2>
+      <p data-i18n="team_sub">Los desarrolladores detrás de la experiencia Ventix</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-photo" style="background-image: url('/public/assets/images/Perfil_Jorge_Taipe.png'); background-size: cover; background-position: center;"></div>
+        <h3>Jorge Taipe</h3>
+        <span data-i18n="team_role">Ingeniero de Software</span>
+      </div>
+      <div class="team-card reveal" style="transition-delay:.1s">
+        <div class="team-photo" style="background-image: url('/public/assets/images/fotogeral.png'); background-size: cover; background-position: center;"></div>
+        <h3>Geraldine Suarez</h3>
+        <span data-i18n="team_role">Ingeniero de Software</span>
+      </div>
+      <div class="team-card reveal" style="transition-delay:.2s">
+        <div class="team-photo" style="background-image: url('/public/assets/images/fotoruth.jpeg'); background-size: cover; background-position: center;"></div>
+        <h3>Ruth Sanchez</h3>
+        <span data-i18n="team_role">Ingeniero de Software</span>
+      </div>
+      <div class="team-card reveal" style="transition-delay:.3s">
+        <div class="team-photo" style="background-image: url('/public/assets/images/fotoalbin.png'); background-size: cover; background-position: center;"></div>
+        <h3>Albino Caceres</h3>
+        <span data-i18n="team_role">Ingeniero de Software</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <div class="contact-img">
+        <img src="./public/assets/images/image8.png" alt="Contact Us"/>
+      </div>
+      <div class="contact-form">
+        <h2 data-i18n="contact_title">Ponte en contacto con nosotros</h2>
+        <p class="sub" data-i18n="contact_sub">Resolvemos tus dudas de inmediato para que tu experiencia sea perfecta</p>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name" data-i18n="contact_label_name">Nombre:</label>
+            <input type="text" id="name" data-i18n="contact_label_name" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact_label_email">Correo:</label>
+            <input type="email" id="email" data-i18n="contact_label_email" placeholder="Correo" required>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact_label_msg">Mensaje:</label>
+            <textarea id="message" data-i18n="contact_label_msg" placeholder="Mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" data-i18n="contact_btn">Contáctanos</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">
+      <div class="footer-logo-icon">🌬️</div>
+      <div class="footer-logo-text">
+        Ventix
+        <small data-i18n="footer_slogan">Ventilación Inteligente</small>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="social-links">
+      <a href="https://www.facebook.com/?locale=es_LA"
+      ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+      /></a>
+      <a href="https://www.instagram.com/"
+      ><img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt="Instagram"
+              class="social-icon"
+      /></a>
+      <a href="https://pe.linkedin.com/"
+      ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+      /></a>
+      <a href="https://x.com/?lang=es"
+      ><img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png"
+              alt="X"
+              class="social-icon"
+      /></a>
+      <a href="https://wa.me/51999999999">
+        <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+                alt="WhatsApp"
+                class="social-icon"
+        />
+      </a>
+
+
+
+
+    </div>
+    <div class="footer-copyright">
+      <p class="footer-copy" data-i18n="footer_copy">2026 © Ventix Evolution – Todos los derechos reservados</p>
+      <p class="footer-legal"><a href="#" data-i18n="footer_legal">Política de Privacidad, Términos y Condiciones</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="./public/assets/scripts/translations/en.js"></script>
+<script src="./public/assets/scripts/translations/es.js"></script>
+<script src="./public/assets/scripts/main.js"></script>
 
 </body>
 </html>
