@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
   // --- 1. SISTEMA DE IDIOMAS ---
-  let currentLang = 'en'; 
-  const langBtn = document.querySelector('.btn-lang');
+  let currentLang = 'en';
 
   function updateTexts() {
     const dictionary = currentLang === 'en' ? en : es; 
@@ -19,13 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     document.documentElement.lang = currentLang;
-  }
-
-  if (langBtn) {
-    langBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'en' ? 'es' : 'en';
-      updateTexts();
-    });
   }
 
   // --- 2. EFECTO DEL NAVBAR ---
